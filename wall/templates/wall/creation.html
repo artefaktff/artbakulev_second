@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "wall/css/bootstrap.min.css" %}">
+    <title>Создать новый пост</title>
+</head>
+<body>
+<div class="container" style="text-align: center; width: 50%">
+    {% if msg %}
+        <p style="font-size: 24px">{{ msg }} </p>
+    {% endif %}
+
+    <form class="form-group" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        <label for="title">Заголовок</label><br/>
+        <input class="form-control" placeholder="Title" type="text" name="title" id="title"/>
+        <label for="date">Дата</label><br/>
+        <input class="form-control" type="date" name="date" id="date"/>
+        <label  for="description">Описание</label><br/>
+        <textarea style="height: 300px;" placeholder="Description" class="form-control" type="text" name="description" id="description"/></textarea>
+        <label for="file">Главное изображение</label><br/>
+        <input class="form-control" type="file" name="file" id="file"/>
+        <label for="images">Изображения для поста</label><br/>
+        <input class="form-control" type="file" min="1" max="9999" multiple="multiple" name="images" id="images"/>
+
+        <input  style="margin-top: 20px" class="btn btn-primary" type="submit" value="Создать пост"/>
+    </form>
+</div>
+</body>
+</html>

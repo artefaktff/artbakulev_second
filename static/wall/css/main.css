@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Roboto");
+.tools {
+  font-family: "Roboto", sans-serif;
+  color: #cd5c5c; }
+
+#index {
+  overflow: hidden; }
+
+#preloader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  background-color: white; }
+
+a:hover {
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-transition: 0.5s;
+  text-decoration: none;
+  color: indianred; }
+
+a:active {
+  text-decoration: none; }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: rgba(255, 255, 255, 0); }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px; }
+
+@viewport;
+#info {
+  z-index: 10000;
+  text-align: center;
+  opacity: 1;
+  top: 5%;
+  left: 5%;
+  position: fixed;
+  color: black;
+  font-size: 32px;
+  cursor: pointer;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -o-transition: 0.3s; }
+
+#info:hover {
+  color: indianred;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -o-transition: 0.3s; }
+
+#information {
+  z-index: 1000;
+  position: fixed;
+  border-right: 4px solid indianred;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -o-transition: 1s;
+  display: none;
+  height: 100vh;
+  padding-top: 50px;
+  width: 400px;
+  margin-left: -400px; }
+  #information .aboutMe .bordered {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid indianred; }
+  #information .aboutMe a {
+    color: indianred;
+    text-decoration: underline; }
+    #information .aboutMe a:hover {
+      color: grey; }
+  #information .aboutMe #python {
+    color: green; }
+  #information .aboutMe p {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center; }
+  #information .aboutMe img {
+    width: 200px; }
+
+.main {
+  height: 200vh; }
+  .main #parallax {
+    background: url("../images/bg.jpg");
+    width: 100%;
+    height: 100%; }
+  .main #introduction {
+    text-align: center;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 50%; }
+    .main #introduction #rocket {
+      position: absolute;
+      top: 40vh;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 30px auto;
+      color: white;
+      z-index: 100;
+      height: 80px; }
+    .main #introduction .red_line {
+      border-left: 2px solid orange;
+      border-right: 2px solid orange;
+      position: absolute;
+      top: 40vh;
+      left: 0;
+      bottom: 0;
+      margin: 30px auto;
+      width: 10px;
+      height: 0;
+      background-color: orangered; }
+    .main #introduction #red_line_1 {
+      right: -15px; }
+    .main #introduction #red_line_2 {
+      right: 15px; }
+    .main #introduction .centered {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 25%; }
+      .main #introduction .centered h1 {
+        display: inline-block;
+        font-family: "Dancing Script", cursive;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 6px solid white; }
+      .main #introduction .centered h2 {
+        text-decoration: underline; }
+      .main #introduction .centered .btn {
+        z-index: 1000;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px; }
+  .main #portfolio {
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    background: url("../images/bg_white.jpg"); }
+    .main #portfolio .work:hover {
+      filter: grayscale(0%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+    .main #portfolio .work {
+      background-color: white;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      filter: grayscale(100%);
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 2px solid lightgrey;
+      border-bottom: 2px solid lightgray;
+      width: 100%;
+      -webkit-box-shadow: 0px 0px 5px 0px indianred;
+      -moz-box-shadow: 0px 0px 5px 0px indianred;
+      box-shadow: 0px 0px 5px 0px indianred; }
+    .main #portfolio h2 {
+      text-align: center;
+      border-radius: 2px;
+      color: black;
+      font-weight: 700; }
+    .main #portfolio p {
+      margin-top: 10px;
+      padding-left: 10px;
+      border-left: 3px solid white; }
+    .main #portfolio img {
+      border-radius: 20px;
+      margin-top: 10px;
+      width: 100%; }
+
+header {
+  z-index: 1000;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -o-transition: 1s;
+  display: table;
+  text-align: center;
+  color: white;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: url("../images/main_bg.jpg") no-repeat;
+  opacity: 1; }
+  header #cell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+
+header:hover {
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -o-transition: 1s;
+  opacity: 1; }
+
+.post {
+  padding-top: 75px;
+  height: 100%; }
+  .post img {
+    margin-top: 15px;
+    width: 100%; }
+  .post .navigator {
+    position: fixed;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    color: black;
+    font-size: 32px; }
+  .post .navigator:hover {
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    color: grey; }
+  .post #toTop {
+    opacity: 0;
+    transform: rotate(180deg);
+    margin-left: 40px; }
+  .post #forMobileToTop {
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    display: table;
+    opacity: 0;
+    font-size: 50px;
+    color: white;
+    height: 50px;
+    background-color: indianred;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    .post #forMobileToTop i {
+      display: table-cell;
+      vertical-align: middle; }
+  .post a {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=main.css.map */
