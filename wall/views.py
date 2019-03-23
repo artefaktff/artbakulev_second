@@ -57,9 +57,10 @@ def creation(request):
         def create_new_post(d, n):
             def create_new_images(pk, url, number):
                 for i in range(n):
-                    img = Image(name=str(i), image_link='/static/wall/res/'+url+'/images/' + str(i) + '.jpg',
+                    img = Image(name=str(i), image_link='/static/wall/res/' + url + '/images/' + str(i) + '.jpg',
                                 post=new_post)
                     img.save()
+
             new_post = Post(title=d['title'], short_url=d['short_url'],
                             pub_date=d['pub_date'], description=d['description'], main_image_link=d['main_image_link'])
             new_post.save()
@@ -68,7 +69,7 @@ def creation(request):
         try:
             post = dict()
             post['title'] = request.POST['title']
-            post['short_url'] = sub(r"'|,|\.|\\| ", '', translit(post['title'], 'ru', reversed=True).lower())
+            post['short_url'] = sub(r"'[,.\\ ]", '', translit(post['title'], 'ru', reversed=True).lower())
             post['pub_date'] = request.POST['date']
             post['description'] = request.POST['description']
             post['main_image_link'] = '/wall/res/' + post['short_url'] + '/images/' + str(request.FILES['file'])
@@ -86,5 +87,5 @@ def creation(request):
 
 def sniffer(request):
     with open('~/logs{}'.format(str(datetime.datetime)), 'w') as f:
-	f.write(str(request))
+        f.write(str(request))
     return HttpResponse('p{color: blue}; a{text-decoration:none;')
