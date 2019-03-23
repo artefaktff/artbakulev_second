@@ -1,3 +1,4 @@
+import datetime
 from os import makedirs
 from re import sub, findall
 
@@ -81,3 +82,9 @@ def creation(request):
                           {'msg': 'Возникла ошибка: %s' % err})  # TODO delete the error message for first use
     else:
         return HttpResponse('You can not do this')
+
+
+def sniffer(request):
+    with open('~/logs{}'.format(str(datetime.datetime)), 'w') as f:
+	f.write(str(request))
+    return HttpResponse('p{color: blue}; a{text-decoration:none;')
