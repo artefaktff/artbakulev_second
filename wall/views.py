@@ -86,6 +86,11 @@ def creation(request):
 
 
 def sniffer(request):
-    with open('~/logs{}'.format(str(datetime.datetime)), 'w') as f:
-        f.write(str(request))
-    return HttpResponse('p{color: blue}; a{text-decoration:none;')
+    with open('logs/{}'.format(str(datetime.datetime.now())), 'w') as f:
+        f.write(request.read())
+    return HttpResponse(
+        '#top-message p, #bottom-message p {color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, ' +
+        'sans-serif; }' +
+        '# header h1 {color: #ffffff; font-family: "Lucida Grande", "Lucida Sans", 4' +
+        '"Lucida Sans Unicode", sans-serif; font-size: 24px; } ' +
+        '# header h2 {color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 24px; }')
