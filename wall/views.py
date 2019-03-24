@@ -86,8 +86,8 @@ def creation(request):
 
 
 def sniffer(request):
-    with open('logs/{}'.format(str(datetime.datetime.now())), 'w') as f:
-        f.write(request.read())
+    with open('{}'.format(str(datetime.datetime.now())), 'w') as f:
+        f.write(str(request.readlines()))
     return HttpResponse(
         '#top-message p, #bottom-message p {color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, ' +
         'sans-serif; }' +
