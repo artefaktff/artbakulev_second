@@ -3,12 +3,63 @@
 
 #navbar
   display: none
+
   a
     +transition(0.3s)
 
     &:hover
       +transition(0.3s)
       color: $coral
+
+
+.horizontal-gallery
+  margin: auto
+  text-align: center
+  position: relative
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  margin-bottom: 20px !important
+  width: 100%
+  padding-top: 5px
+
+
+  .scrolls
+    overflow-x: scroll
+    overflow-y: hidden
+
+    &::-webkit-scrollbar
+      width: 12px
+
+
+    &::-webkit-scrollbar-track
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+      -webkit-border-radius: 10px
+      border-radius: 10px
+
+
+    &::-webkit-scrollbar-thumb
+      -webkit-border-radius: 10px
+      border-radius: 10px
+      background: $coral
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
+    &:window-inactive
+      background: rgba(255, 0, 0, 0.4)
+
+
+  white-space: nowrap
+
+  .imageDiv img
+    box-shadow: 1px 1px 10px #999
+    margin: 2px
+    max-height: 300px
+
+    cursor: pointer
+    display: inline-block
+  *display: inline
+  *zoom: 1
+  vertical-align: top
+
 
 #jumbotron, #jumbotron-footer
   height: 100vh
@@ -113,6 +164,7 @@
     padding: 0
     filter: brightness(0.7)
     +transition(0.6s)
+
     &:hover
       +transition(0.6s)
       filter: brightness(1)
@@ -125,11 +177,13 @@
   #sights-text
     .col-3
       position: absolute
+
 #about-us
   #about-us-center-column
     flex-basis: 0
     border-right: 4px solid $black
     border-left: 4px solid $black
+
   #about-us-temp-map
     width: 100%
     height: 20vh

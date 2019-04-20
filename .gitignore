@@ -1,2 +1,3 @@
 artbakulevenv/
 local_settings.py/
+*cache*

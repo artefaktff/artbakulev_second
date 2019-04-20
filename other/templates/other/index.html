@@ -1,24 +1,23 @@
 <!--TODO: Сделай схему проезда - спойлер-->
 <!--TODO: рассылка и программа лояльности-->
-
-{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Hotel Olimp</title>
-    <link rel="stylesheet" type="text/css" href="{% static "other/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static "other/css/main.css" %}">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
 <div id="navbar">
     <nav class="navbar my-navbar fixed-top navbar-expand-lg black-bg-75">
         <div class="container">
-            <a class="navbar-brand a-no-decoration" href="#">Olimp</a>
+            <a class="anchor navbar-brand a-no-decoration" href="#jumbotron">Olimp</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -38,7 +37,7 @@
                         <a class="anchor nav-link a-no-decoration" href="#about-us">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="anchor nav-link a-no-decoration" href="#jumbotron-footer">BOOK</a>
+                        <a id="book-menu-item" class="anchor nav-link a-no-decoration" href="#jumbotron-footer">BOOK</a>
                     </li>
                 </ul>
             </div>
@@ -64,273 +63,274 @@
         </div>
     </div>
 </div>
-<div id="advantages" class="text-center white-bg">
 
-    <div class="black-bg">
-        <h1 class="subtitle white-text p-3">HOTEL OLIMP</h1>
-    </div>
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col-3"></div>
-            <div class="col-6 text-justify">
-                <hr>
-                <h3 class="subtitle">We are waiting for you!</h3>
-                <hr>
-                <p class="italic-text"><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. In
-                    vitae lorem sit amet nunc finibus molestie. Proin
-                    eget finibus nulla. Morbi ornare lacus eget mi tristique faucibus. Phasellus ante tellus, placerat
-                    vel
-                    lacinia in, mattis congue arcu. Nulla mauris tellus, iaculis et tincidunt vitae, porta ac erat.
-                    Morbi
-                    varius, turpis id sodales cursus, tellus nisi mattis sapien, id dapibus arcu nulla tristique odio.
-                    Donec vel
-                    blandit arcu, id cursus mauris. Suspendisse finibus risus ac dolor cursus commodo. Etiam interdum
-                    nibh et
-                    felis aliquet mollis. Maecenas consequat felis eget vulputate volutpat. Donec auctor justo felis, eu
-                    sodales
-                    turpis commodo sed.</p>
-            </div>
-            <div class="col-3"></div>
-        </div>
-        <hr>
-        <div class="row mt-5 pb-5">
-            <div class="col-3">
-                <i class="fa fa-coffee"></i>
-                <hr>
-                <h2 class="mt-3">Breakfast included</h2>
-                <hr>
-                <p class="italic-text">Enjoy hot coffee and sandwich every morning.</p>
-            </div>
-            <div class="col-3">
-                <i class="fa fa-futbol"></i>
-                <hr>
-                <h2 class="mt-3">Breakfast included</h2>
-                <hr>
-                <p class="italic-text">Enjoy hot coffee and sandwich every morning.</p>
-            </div>
-            <div class="col-3">
-                <i class="fa fa-archway"></i>
-                <hr>
-                <h2 class="mt-3">Breakfast included</h2>
-                <hr>
-                <p class="italic-text">Enjoy hot coffee and sandwich every morning.</p>
-            </div>
-            <div class="col-3">
-                <i class="fa fa-comment-alt"></i>
-                <hr>
-                <h2 class="mt-3">Breakfast included</h2>
-                <hr>
-                <p class="italic-text">Enjoy hot coffee and sandwich every morning.</p>
-            </div>
-        </div>
-    </div>
 
-</div>
 <div id="book-preview" class="white-bg">
-    <div class="black-bg">
-        <h1 class="subtitle white-text p-3">Book your stay</h1>
-    </div>
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-4 order-md-0 col-sm-12 order-sm-0 text-center">
-                <div class="form-group">
-                    <label for="book-preview-departure"></label>
-                    <input type="email" class="form-control" id="book-preview-arrival" placeholder="Arrival">
-                    <small id="book-preview-arrival-help" class="form-text text-muted">Select when you are going to
-                        come.
-                    </small>
+    <div class="text-center white-bg">
+        <div class="black-bg-with-shadow">
+            <h1 class="subtitle white-text p-3">HOTEL OLIMP</h1>
+        </div>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-3"></div>
+
+                <div class="col-6 text-justify">
+                    <hr>
+                    <h3 class="subtitle">We are waiting for you!</h3>
+                    <hr>
+                    <p class="italic-text"><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. In
+                        vitae lorem sit amet nunc finibus molestie. Proin
+                        eget finibus nulla. Morbi ornare lacus eget mi tristique faucibus. Phasellus ante tellus,
+                        placerat
+                        vel
+                        lacinia in, mattis congue arcu. Nulla mauris tellus, iaculis et tincidunt vitae, porta ac erat.
+                        Morbi
+                        varius, turpis id sodales cursus, tellus nisi mattis sapien, id dapibus arcu nulla tristique
+                        odio.
+                        Donec vel
+                        blandit arcu, id cursus mauris. Suspendisse finibus risus ac dolor cursus commodo. Etiam
+                        interdum
+                        nibh et
+                        felis aliquet mollis. Maecenas consequat felis eget vulputate volutpat. Donec auctor justo
+                        felis, eu
+                        sodales
+                        turpis commodo sed.</p>
                 </div>
+                <div class="col-3"></div>
             </div>
-            <div class="col-md-4 order-md-1 col-sm-12 order-sm-2 text-center">
-                <div class="form-group">
-                    <label for="book-preview-departure"></label>
-                    <input type="email" class="form-control" id="book-preview-departure" placeholder="Departure">
-                    <small id="book-preview-departure-help" class="form-text text-muted">Select when you are going to
-                        leave.
-                    </small>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-4 order-md-0 col-sm-12 order-sm-0 text-center">
+                    <div class="form-group">
+                        <label for="book-preview-departure"></label>
+                        <input type="email" class="form-control" id="book-preview-arrival" placeholder="Arrival">
+                        <small id="book-preview-arrival-help" class="form-text text-muted">Select when you are going to
+                            come.
+                        </small>
+                    </div>
                 </div>
-                <a class="a-no-decoration" href="/book">
-                    <div class="anchor btn my-btn btn-block text-white mt-5 mb-5">BOOK NOW</div>
-                </a>
-            </div>
-            <div class="col-md-4 order-md-2 col-sm-12 order-sm-1 text-center">
-                <label for="book-preview-price"></label>
-                <select id="book-preview-price" class="form-control">
-                    <option>Room</option>
-                    <option>Lux 2000/night</option>
-                    <option>Economy 1500/night</option>
-                    <option>Economy 1500/night</option>
-                    <option>Economy 1500/night</option>
-                </select>
-                <small id="book-preview-price-help" class="form-text text-muted">Select room price.</small>
+                <div class="col-md-4 order-md-1 col-sm-12 order-sm-2 text-center">
+                    <div class="form-group">
+                        <label for="book-preview-departure"></label>
+                        <input type="email" class="form-control" id="book-preview-departure" placeholder="Departure">
+                        <small id="book-preview-departure-help" class="form-text text-muted">Select when you are going
+                            to
+                            leave.
+                        </small>
+                    </div>
+                    <a class="a-no-decoration" href="/book">
+                        <div class="anchor btn my-btn btn-block text-white mt-5 mb-5">BOOK NOW</div>
+                    </a>
+                </div>
+                <div class="col-md-4 order-md-2 col-sm-12 order-sm-1 text-center">
+                    <label for="book-preview-price"></label>
+                    <select id="book-preview-price" class="form-control">
+                        <option>Room</option>
+                        <option>Lux 2000/night</option>
+                        <option>Economy 1500/night</option>
+                        <option>Economy 1500/night</option>
+                        <option>Economy 1500/night</option>
+                    </select>
+                    <small id="book-preview-price-help" class="form-text text-muted">Select room price.</small>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div id="rooms" class="white-bg">
+
+        <div class="container-fluid black-bg white-text pt-3 pb-5">
+            <div class="horizontal-gallery">
+                <div class="scrolls">
+                    <a href="images/sea.jpg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                            src="images/sea.jpg"></a>
+                    <a href="images/cozy.jpeg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                              src="images/cozy.jpeg"></a>
+                    <a href="images/light.jpg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                              src="images/light.jpg"></a>
+                    <a href="images/jumbotron-main.jpeg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                                        src="images/jumbotron-main.jpeg"></a>
+                    <a href="images/sea.jpg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                            src="images/sea.jpg"></a>
+                </div>
+            </div>
+            <div class="container text-center mt-3">
+                <div class="my-hr white-bg"></div>
+                <h1 class="subtitle white-text">Lux apartaments</h1>
+                <div class="my-hr white-bg"></div>
+                <p class="italic-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim lectus at fringilla rutrum.
+                    Ut
+                    lectus massa, tincidunt sed est eu, venenatis rhoncus dolor. Integer maximus bibendum augue, dictum
+                    venenatis purus imperdiet a. Vestibulum eu sagittis lorem. Duis at arcu a sem condimentum interdum
+                    non
+                    et eros. Mauris pellentesque dui ut arcu sollicitudin auctor. Cras dignissim vehicula nisl id
+                    ornare.
+                    Donec a scelerisque sem. Donec nec mollis ex, ac facilisis orci. Curabitur sed auctor lacus.
+                    Suspendisse
+                    a facilisis ligula. Etiam congue lorem a enim aliquet, eu ultrices ex congue.
+                </p>
+                <div class="anchor btn my-btn text-white mt-5" href="#jumbotron-footer">BOOK NOW</div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="horizontal-gallery">
+                <div class="scrolls">
+                    <a href="images/sea.jpg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                            src="images/sea.jpg"></a>
+                    <a href="images/cozy.jpeg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                              src="images/cozy.jpeg"></a>
+                    <a href="images/light.jpg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                              src="images/light.jpg"></a>
+                    <a href="images/jumbotron-main.jpeg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                                        src="images/jumbotron-main.jpeg"></a>
+                    <a href="images/sea.jpg" data-lightbox="lux" data-title="Lux room"><img alt="lux"
+                                                                                            src="images/sea.jpg"></a>
+                </div>
+            </div>
+            <div class="container text-center mt-3 pt-3">
+                <div class="my-hr coral-bg"></div>
+                <h1 class="subtitle coral-text">Lux apartaments</h1>
+                <div class="my-hr coral-bg"></div>
+                <p class="italic-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim lectus at fringilla rutrum.
+                    Ut
+                    lectus massa, tincidunt sed est eu, venenatis rhoncus dolor. Integer maximus bibendum augue, dictum
+                    venenatis purus imperdiet a. Vestibulum eu sagittis lorem. Duis at arcu a sem condimentum interdum
+                    non
+                    et eros. Mauris pellentesque dui ut arcu sollicitudin auctor. Cras dignissim vehicula nisl id
+                    ornare.
+                    Donec a scelerisque sem. Donec nec mollis ex, ac facilisis orci. Curabitur sed auctor lacus.
+                    Suspendisse
+                    a facilisis ligula. Etiam congue lorem a enim aliquet, eu ultrices ex congue.
+                </p>
+                <div class="anchor btn my-btn text-white mt-5" href="#jumbotron-footer">BOOK NOW</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="temp-parallax" class="black-bg opacity-50"></div>
+    <div id="parallax"></div>
+
+
+    <div id="sights">
+        <div class="black-bg-with-shadow">
+            <h1 class="subtitle white-text p-3 text-center">Nearest sights</h1>
+        </div>
+        <div id="sights-images" class="container-fluid p-0, m-0">
+            <div class="row">
+
+                <div id='sights-images-1' class="col-2 align-items-end">
+                    <div class="d-flex h-100 align-items-end">
+                        <div class="d-block w-100 text-center position-relative pt-3 pb-3">
+                            <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
+                            <p class="italic-text text-white">Religious center of Moscow</p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-clock"><span
+                                        class="text-white  pl-3">5-7 minutes</span></i>
+                            </p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-walking"><span
+                                        class="text-white pl-3">150 metres</span></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id='sights-images-2' class="col-2 align-items-end">
+                    <div class="d-flex h-100 align-items-end">
+                        <div class="d-block w-100 text-center position-relative pt-3 pb-3">
+                            <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
+                            <p class="italic-text text-white">Religious center of Moscow</p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-clock"><span
+                                        class="text-white  pl-3">5-7 minutes</span></i>
+                            </p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-walking"><span
+                                        class="text-white pl-3">150 metres</span></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id='sights-images-3' class="col-2 align-items-end">
+                    <div class="d-flex h-100 align-items-end">
+                        <div class="d-block w-100 text-center position-relative pt-3 pb-3">
+                            <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
+                            <p class="italic-text text-white">Religious center of Moscow</p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-clock"><span
+                                        class="text-white  pl-3">5-7 minutes</span></i>
+                            </p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-walking"><span
+                                        class="text-white pl-3">150 metres</span></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id='sights-images-4' class="col-2 align-items-end">
+                    <div class="d-flex h-100 align-items-end">
+                        <div class="d-block w-100 text-center position-relative pt-3 pb-3">
+                            <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
+                            <p class="italic-text text-white">Religious center of Moscow</p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-clock"><span
+                                        class="text-white  pl-3">5-7 minutes</span></i>
+                            </p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-walking"><span
+                                        class="text-white pl-3">150 metres</span></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id='sights-images-5' class="col-2 align-items-end">
+                    <div class="d-flex h-100 align-items-end">
+                        <div class="d-block w-100 text-center position-relative pt-3 pb-3">
+                            <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
+                            <p class="italic-text text-white">Religious center of Moscow</p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-clock"><span
+                                        class="text-white  pl-3">5-7 minutes</span></i>
+                            </p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-walking"><span
+                                        class="text-white pl-3">150 metres</span></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id='sights-images-6' class="col-2 align-items-end">
+                    <div class="d-flex h-100 align-items-end">
+                        <div class="d-block w-100 text-center position-relative pt-3 pb-3">
+                            <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
+                            <p class="italic-text text-white">Religious center of Moscow</p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-clock"><span
+                                        class="text-white  pl-3">5-7 minutes</span></i>
+                            </p>
+                            <p class="sight-details mt-3">
+                                <i class="text-white fa fa-walking"><span
+                                        class="text-white pl-3">150 metres</span></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
-
-<div id="rooms" class="white-bg">
-
-    <div class="container-fluid black-bg white-text pt-3">
-        <div class="horizontal-gallery">
-            <img src="{% static 'other/images/cozy.jpeg' %}" alt="test">
-            <img src="{% static 'other/images/sea.jpg' %}" alt="test">
-            <img src="{% static 'other/images/light.jpg' %}" alt="test">
-        </div>
-        <div class="container text-center mt-3">
-            <div class="my-hr white-bg"></div>
-            <h1 class="subtitle white-text">Lux apartaments</h1>
-            <div class="my-hr white-bg"></div>
-            <p class="italic-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim lectus at fringilla rutrum. Ut
-                lectus massa, tincidunt sed est eu, venenatis rhoncus dolor. Integer maximus bibendum augue, dictum
-                venenatis purus imperdiet a. Vestibulum eu sagittis lorem. Duis at arcu a sem condimentum interdum non
-                et eros. Mauris pellentesque dui ut arcu sollicitudin auctor. Cras dignissim vehicula nisl id ornare.
-                Donec a scelerisque sem. Donec nec mollis ex, ac facilisis orci. Curabitur sed auctor lacus. Suspendisse
-                a facilisis ligula. Etiam congue lorem a enim aliquet, eu ultrices ex congue.
-            </p>
-            <div class="btn my-btn text-white mt-5 mb-5">BOOK NOW</div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="horizontal-gallery">
-            <img src="{% static 'other/images/cozy.jpeg' %}" alt="test">
-            <img src="{% static 'other/images/sea.jpg' %}" alt="test">
-            <img src="{% static 'other/images/light.jpg' %}" alt="test">
-        </div>
-        <div class="container text-center mt-3 pt-3">
-            <div class="my-hr coral-bg"></div>
-            <h1 class="subtitle coral-text">Lux apartaments</h1>
-            <div class="my-hr coral-bg"></div>
-            <p class="italic-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim lectus at fringilla rutrum. Ut
-                lectus massa, tincidunt sed est eu, venenatis rhoncus dolor. Integer maximus bibendum augue, dictum
-                venenatis purus imperdiet a. Vestibulum eu sagittis lorem. Duis at arcu a sem condimentum interdum non
-                et eros. Mauris pellentesque dui ut arcu sollicitudin auctor. Cras dignissim vehicula nisl id ornare.
-                Donec a scelerisque sem. Donec nec mollis ex, ac facilisis orci. Curabitur sed auctor lacus. Suspendisse
-                a facilisis ligula. Etiam congue lorem a enim aliquet, eu ultrices ex congue.
-            </p>
-            <div class="btn my-btn text-white mt-5 mb-5">BOOK NOW</div>
-        </div>
-    </div>
-</div>
-
-<div id="temp-parallax" class="black-bg opacity-50"></div>
-<div id="parallax">
-</div>
-
-
-<div id="sights">
-    <div class="black-bg">
-        <h1 class="subtitle white-text p-3 text-center">Nearest sights</h1>
-    </div>
-    <div id="sights-images" class="container-fluid p-0, m-0">
-        <div class="row">
-
-            <div id='sights-images-1' class="col-2 align-items-end">
-                <div class="d-flex h-100 align-items-end">
-                    <div class="d-block w-100 text-center position-relative pt-3 pb-3">
-                        <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
-                        <p class="italic-text text-white">Religious center of Moscow</p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-clock"><span
-                                    class="text-white  pl-3">5-7 minutes</span></i>
-                        </p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-walking"><span
-                                    class="text-white pl-3">150 metres</span></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id='sights-images-2' class="col-2 align-items-end">
-                <div class="d-flex h-100 align-items-end">
-                    <div class="d-block w-100 text-center position-relative pt-3 pb-3">
-                        <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
-                        <p class="italic-text text-white">Religious center of Moscow</p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-clock"><span
-                                    class="text-white  pl-3">5-7 minutes</span></i>
-                        </p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-walking"><span
-                                    class="text-white pl-3">150 metres</span></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id='sights-images-3' class="col-2 align-items-end">
-                <div class="d-flex h-100 align-items-end">
-                    <div class="d-block w-100 text-center position-relative pt-3 pb-3">
-                        <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
-                        <p class="italic-text text-white">Religious center of Moscow</p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-clock"><span
-                                    class="text-white  pl-3">5-7 minutes</span></i>
-                        </p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-walking"><span
-                                    class="text-white pl-3">150 metres</span></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id='sights-images-4' class="col-2 align-items-end">
-                <div class="d-flex h-100 align-items-end">
-                    <div class="d-block w-100 text-center position-relative pt-3 pb-3">
-                        <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
-                        <p class="italic-text text-white">Religious center of Moscow</p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-clock"><span
-                                    class="text-white  pl-3">5-7 minutes</span></i>
-                        </p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-walking"><span
-                                    class="text-white pl-3">150 metres</span></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id='sights-images-5' class="col-2 align-items-end">
-                <div class="d-flex h-100 align-items-end">
-                    <div class="d-block w-100 text-center position-relative pt-3 pb-3">
-                        <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
-                        <p class="italic-text text-white">Religious center of Moscow</p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-clock"><span
-                                    class="text-white  pl-3">5-7 minutes</span></i>
-                        </p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-walking"><span
-                                    class="text-white pl-3">150 metres</span></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id='sights-images-6' class="col-2 align-items-end">
-                <div class="d-flex h-100 align-items-end">
-                    <div class="d-block w-100 text-center position-relative pt-3 pb-3">
-                        <h1 class="subtitle text-white">TEMPLE OF SAVIOR</h1>
-                        <p class="italic-text text-white">Religious center of Moscow</p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-clock"><span
-                                    class="text-white  pl-3">5-7 minutes</span></i>
-                        </p>
-                        <p class="sight-details mt-3">
-                            <i class="text-white fa fa-walking"><span
-                                    class="text-white pl-3">150 metres</span></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
 <div id="about-us" class="white-bg">
-    <h1 class="subtitle text-center w-100 white-text black-bg pt-3 pb-2">CONTACTS</h1>
+
+    <h1 class="subtitle text-center w-100 white-text black-bg-with-shadow pt-3 pb-2">CONTACTS</h1>
     <div class="container">
-        <div class="row justify-content-center italic-text mt-4 pt-5 pb-5">
+        <div class="row justify-content-center italic-text mt-4 pt-4 pb-5">
             <div class="col-4 text-right">
                 Moscow,<br>
                 Moscvoretckaya<br>
@@ -356,6 +356,7 @@
         <br/>
     </div>
 </div>
+
 <div id="jumbotron-footer">
     <div class="solid opacity-75 black-bg"></div>
     <div class="d-flex h-100 justify-content-center align-items-center">
@@ -409,9 +410,10 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="{% static 'other/js/jquery-3.3.1.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'other/js/popper.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'other/js/bootstrap.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'other/js/onReady.js' %}"></script>
-<script type="text/javascript" src="{% static 'other/js/scroll.js' %}"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/onReady.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
 </html>

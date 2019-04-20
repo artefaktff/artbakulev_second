@@ -40,18 +40,21 @@ h1, h2, h3, h4, h5, h6, p
 a
   text-decoration: underline
   +transition(0.4s)
-  color: $black
+
   &:hover
     +transition(0.4s)
     color: $coral
+
   &:visited
     color: $black-50
 
 .a-no-decoration
   text-decoration: none
   outline: none
+
   &:hover
     text-decoration: none
+
   &:visited
     text-decoration: none
 
@@ -91,6 +94,12 @@ a
 .black-bg
   background-color: $black
 
+.black-bg-with-shadow
+  background-color: $black
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75)
+  -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75)
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75)
+
 .black-bg-50
   background-color: $black-50
 
@@ -116,16 +125,23 @@ a
   margin: 10px 0
 
 .my-navbar
-  border-bottom: $white 3px solid
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75)
+  -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75)
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75)
+  #book-menu-item
+    color: coral
+
   .navbar-brand
     font-size: 1.5em
   z-index: 10000
   font-family: "Bebas Neue", sans-serif
   font-size: 1.5em
   +transition(0.9s)
+
   &:hover
     background-color: $black
     +transition(0.5s)
+
   a
     color: $white
 
@@ -135,6 +151,7 @@ a
   font-size: 24px
   font-family: 'Roboto', sans-serif
   padding: 0.5% 10%
+
   &:hover
     background-color: $dark-coral
 
