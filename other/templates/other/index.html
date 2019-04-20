@@ -1,15 +1,17 @@
 <!--TODO: Сделай схему проезда - спойлер-->
 <!--TODO: рассылка и программа лояльности-->
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Hotel Olimp</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static "other/css/bootstrap.min.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="{% static "other/css/main.css" %}">
 
 </head>
 <body>
@@ -171,9 +173,9 @@
 
     <div class="container-fluid black-bg white-text pt-3">
         <div class="horizontal-gallery">
-            <img src="images/cozy.jpeg" alt="test">
-            <img src="images/sea.jpg" alt="test">
-            <img src="images/light.jpg" alt="test">
+            <img src="{% static 'other/images/cozy.jpeg' %}" alt="test">
+            <img src="{% static 'other/images/sea.jpg' %}" alt="test">
+            <img src="{% static 'other/images/light.jpg' %}" alt="test">
         </div>
         <div class="container text-center mt-3">
             <div class="my-hr white-bg"></div>
@@ -192,9 +194,9 @@
     </div>
     <div class="container-fluid">
         <div class="horizontal-gallery">
-            <img src="images/cozy.jpeg" alt="test">
-            <img src="images/sea.jpg" alt="test">
-            <img src="images/light.jpg" alt="test">
+            <img src="{% static 'other/images/cozy.jpeg' %}" alt="test">
+            <img src="{% static 'other/images/sea.jpg' %}" alt="test">
+            <img src="{% static 'other/images/light.jpg' %}" alt="test">
         </div>
         <div class="container text-center mt-3 pt-3">
             <div class="my-hr coral-bg"></div>
@@ -407,9 +409,9 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/onReady.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="{% static 'other/js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'other/js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'other/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'other/js/onReady.js' %}"></script>
+<script type="text/javascript" src="{% static 'other/js/scroll.js' %}"></script>
 </html>
