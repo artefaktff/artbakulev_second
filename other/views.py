@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def olimp(request):
-    return HttpResponse("Hello!")
+    return render(request, "other/index.html")

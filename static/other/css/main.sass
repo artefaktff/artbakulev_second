@@ -1,0 +1,137 @@
+@import default
+
+
+#navbar
+  display: none
+  a
+    +transition(0.3s)
+
+    &:hover
+      +transition(0.3s)
+      color: $coral
+
+#jumbotron, #jumbotron-footer
+  height: 100vh
+  width: 100%
+  background: url("../images/jumbotron-main.jpeg") no-repeat
+  background-size: cover
+  color: $white
+  position: relative
+
+  #jumbotron-text-block, #jumbotron-text-block-footer
+    z-index: 1000
+    text-align: center
+
+    h1
+      display: inline-block
+
+    p
+      font-size: 24px
+      word-wrap: break-word
+      width: 100%
+
+  .my-btn
+    margin-top: 5vh
+
+#book-preview
+  h1
+    text-align: center
+
+#advantages
+  i
+    color: $coral
+    font-size: 4em
+
+  h2
+    font-family: "Bebas Neue", sans-serif
+
+#rooms
+  .container
+    width: 60%
+  margin-bottom: 25vh
+
+  img
+    height: 30vh
+
+#parallax
+  z-index: -10
+  top: 0
+  width: 100vw
+  height: 100vh
+  background-image: url("../images/stadium.jpg")
+  position: fixed
+
+//TODO: Reduce it
+#temp-parallax
+  z-index: -5
+  top: 0
+  width: 100vw
+  height: 100vh
+  position: fixed
+
+
+#sights
+  .d-block
+    background-color: $black-75
+
+  .sight-details
+    font-size: 24px
+
+    span
+      font-family: 'Roboto', sans-serif
+      font-style: italic
+
+
+  #sights-images-1
+    background: url("../images/hram.jpg") no-repeat center
+    background-size: cover
+
+  #sights-images-2
+    background: url("../images/stadium.jpg") no-repeat center
+    background-size: cover
+
+  #sights-images-3
+    background: url("../images/city.jpg") no-repeat center
+    background-size: cover
+
+  #sights-images-4
+    background: url("../images/square.jpg") no-repeat center
+    background-size: cover
+
+  #sights-images-5
+    background: url("../images/hram.jpg") no-repeat center
+    background-size: cover
+
+  #sights-images-6
+    background: url("../images/city.jpg") no-repeat center
+    background-size: cover
+  position: relative
+
+  .col-2
+    height: 50vh
+    margin: 0
+    padding: 0
+    filter: brightness(0.7)
+    +transition(0.6s)
+    &:hover
+      +transition(0.6s)
+      filter: brightness(1)
+
+  #sights-images
+    .col-3
+      img
+        width: 100%
+
+  #sights-text
+    .col-3
+      position: absolute
+#about-us
+  #about-us-center-column
+    flex-basis: 0
+    border-right: 4px solid $black
+    border-left: 4px solid $black
+  #about-us-temp-map
+    width: 100%
+    height: 20vh
+    background: url("../images/map.png") no-repeat center
+    background-size: cover
