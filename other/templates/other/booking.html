@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking | Hotel Olimp</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'other/css/bootstrap.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'other/css/booking.css' %}">
+
+</head>
+<body>
+<!--<div id="navbar">-->
+<!--<nav class="navbar my-navbar fixed-top navbar-expand-lg black-bg-75">-->
+<!--<div class="container">-->
+<!--<a class="anchor navbar-brand a-no-decoration" href="index.html">Olimp</a>-->
+<!--<h2 class="anchor navbar-brand a-no-decoration text-white" href="#jumbotron">AVAILABLE ROOMS</h2>-->
+<!--</div>-->
+<!--</nav>-->
+
+<!--</div>-->
+
+<header id="book-form" class="grey-bg-75">
+    <div class="d-flex h-100 justify-content-center">
+        <div id="jumbotron-text-block-footer">
+            <div class="container">
+                <div class="row align-items-start text-center">
+                    <div class="col-md-3 order-md-0 col-sm-12 order-sm-0">
+                        <div class="form-group">
+                            <label for="book-preview-departure-footer"></label>
+                            <input type="email" class="form-control" id="book-preview-arrival-footer"
+                                   placeholder="Arrival">
+                            <!--<small id="book-preview-arrival-help-footer" class="form-text text-white">Select when you-->
+                            <!--are going-->
+                            <!--to-->
+                            <!--come.-->
+                            <!--</small>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-1 col-sm-12 order-sm-2">
+                        <div class="form-group">
+                            <label for="book-preview-departure-footer"></label>
+                            <input type="email" class="form-control" id="book-preview-departure-footer"
+                                   placeholder="Departure">
+                            <!--<small id="book-preview-departure-help-footer" class="form-text text-white">Select when you-->
+                            <!--are-->
+                            <!--going to-->
+                            <!--leave.-->
+                            <!--</small>-->
+                        </div>
+                    </div>
+                    <!--<div class="col-md-3 order-md-2 col-sm-12 order-sm-1">-->
+                    <!--<label for="book-preview-price-footer"></label>-->
+                    <!--<select id="book-preview-price-footer" class="form-control">-->
+                    <!--<option>Room</option>-->
+                    <!--<option>Lux 2000/night</option>-->
+                    <!--<option>Economy 1500/night</option>-->
+                    <!--<option>Economy 1500/night</option>-->
+                    <!--<option>Economy 1500/night</option>-->
+                    <!--</select>-->
+                    <!--&lt;!&ndash;<small id="book-preview-price-help-footer" class="form-text text-white">Select room price.&ndash;&gt;-->
+                    <!--&lt;!&ndash;</small>&ndash;&gt;-->
+                    <!--</div>-->
+                    <div class="col-md-3 order-md-3 col-sm-12 order-sm-2">
+                        <div class="form-group">
+                            <label for="book-number-of-guests"></label>
+                            <input type="number" min="1" class="form-control" id="book-number-of-guests"
+                                   placeholder="Guests">
+                            <!--<small id="book-preview-departure-help-footer" class="form-text text-white">Select when you-->
+                            <!--are-->
+                            <!--going to-->
+                            <!--leave.-->
+                            <!--</small>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-4 col-sm-12 order-sm-1">
+                        <div class="form-group">
+                            <label for="book-button"></label>
+                            <div class="w-100 btn my-btn text-white" id="book-button">FIND</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+<div id="main" class="black-bg">
+    <div class="container pt-3 pb-3 text-center">
+        <!--<div class="emtpy offer">-->
+        <!--<h1 class="subtitle text-white">Start booking now by clicking on the form above!</h1>-->
+        <!--</div>-->
+        <div class="offer">
+            <div class="offer-information">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 pl-0">
+                            <img src="{% static 'other/images/cozy.jpeg' %}" class="h-100 w-100" alt="Room">
+                        </div>
+                        <div class="col-8 text-left m-auto pt-3">
+                            <h2 class="coral-text subtitle">OLIMP'S LUX ROOM</h2>
+                            <h6 class="italic-text black-text">Beautiful luxury apartaments for 2 people.</h6>
+                            <div class="row text-center">
+                                <div class="col-6 mt-4">
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4 pb-3">
+                                <div class="col-4">
+                                    <h5 class="subtitle">NIGHTS: <span class="coral-text">10</span></h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h5 class="subtitle">GUESTS: <span class="coral-text">1 </span></h5>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <h5 class="subtitle">COST: <span class="coral-text">10.000 <i
+                                            class="fa fa-ruble-sign"></i></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn my-btn text-white">BOOK</div>
+        </div>
+        <div class="offer">
+            <div class="offer-information">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 pl-0">
+                            <img src="{% static 'other/images/cozy.jpeg' %}" class="h-100 w-100" alt="Room">
+                        </div>
+                        <div class="col-8 text-left m-auto pt-3">
+                            <h2 class="coral-text subtitle">OLIMP'S LUX ROOM</h2>
+                            <h6 class="italic-text black-text">Beautiful luxury apartaments for 2 people.</h6>
+                            <div class="row text-center">
+                                <div class="col-6 mt-4">
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4 pb-3">
+                                <div class="col-4">
+                                    <h5 class="subtitle">NIGHTS: <span class="coral-text">10</span></h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h5 class="subtitle">GUESTS: <span class="coral-text">1 </span></h5>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <h5 class="subtitle">COST: <span class="coral-text">10.000 <i
+                                            class="fa fa-ruble-sign"></i></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn my-btn text-white">BOOK</div>
+        </div>
+        <div class="offer">
+            <div class="offer-information">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 pl-0">
+                            <img src="{% static 'other/images/cozy.jpeg' %}" class="h-100 w-100" alt="Room">
+                        </div>
+                        <div class="col-8 text-left m-auto pt-3">
+                            <h2 class="coral-text subtitle">OLIMP'S LUX ROOM</h2>
+                            <h6 class="italic-text black-text">Beautiful luxury apartaments for 2 people.</h6>
+                            <div class="row text-center">
+                                <div class="col-6 mt-4">
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                </div>
+                                <div class="col-6">
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                    <p><i class="fa fa-coffee coral-text mt-2 mb-2 mr-3"></i>Breakfast included</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4 pb-3">
+                                <div class="col-4">
+                                    <h5 class="subtitle">NIGHTS: <span class="coral-text">10</span></h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h5 class="subtitle">GUESTS: <span class="coral-text">1 </span></h5>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <h5 class="subtitle">COST: <span class="coral-text">10.000 <i
+                                            class="fa fa-ruble-sign"></i></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn my-btn text-white">BOOK</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

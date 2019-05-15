@@ -1,0 +1,24 @@
+@import default
+
+.emtpy
+  min-height: 100vh
+
+#book-form
+  @include common-shadow
+
+.offer
+  margin-top: 3%
+  .offer-information
+    img
+      filter: brightness(0.7)
+      +transition(0.6s)
+
+      &:hover
+        +transition(0.6s)
+        filter: brightness(1)
+    @include common-shadow
+    border-radius: 0 20px 0 0
+    width: 100%
+    background-color: $grey-75
+  .my-btn
+    @include common-shadow

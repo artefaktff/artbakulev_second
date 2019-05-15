@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500i,700,700i&subset=cyrillic");
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas Neue.ttf"); }
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+
+a {
+  text-decoration: underline;
+  transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s; }
+  a:hover {
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    color: #d83f2d; }
+  a:visited {
+    color: rgba(32, 26, 26, 0.5); }
+
+.a-no-decoration {
+  text-decoration: none;
+  outline: none; }
+  .a-no-decoration:hover {
+    text-decoration: none; }
+  .a-no-decoration:visited {
+    text-decoration: none; }
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 120px; }
+
+.subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px; }
+
+.italic-text {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 18px; }
+
+.solid {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.black-text {
+  color: #201a1a; }
+
+.white-text {
+  color: #f2f2f2; }
+
+.coral-text {
+  color: #d83f2d; }
+
+.black-bg {
+  background-color: #201a1a; }
+
+.black-bg-with-shadow {
+  background-color: #201a1a;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75); }
+
+.black-bg-50 {
+  background-color: rgba(32, 26, 26, 0.5); }
+
+.black-bg-75 {
+  background-color: rgba(32, 26, 26, 0.75); }
+
+.white-bg {
+  background-color: #f2f2f2; }
+
+.white-bg-75 {
+  background-color: rgba(242, 242, 242, 0.75); }
+
+.grey-bg-75 {
+  background-color: rgba(214, 214, 212, 0.75); }
+
+.coral-bg {
+  background-color: #d83f2d; }
+
+.opacity-50 {
+  opacity: 0.5; }
+
+.opacity-75 {
+  opacity: 0.75; }
+
+.my-hr {
+  height: 3px;
+  width: 100%;
+  margin: 10px 0; }
+
+.my-navbar {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  z-index: 10000;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5em;
+  transition: 0.9s;
+  -moz-transition: 0.9s;
+  -o-transition: 0.9s;
+  -webkit-transition: 0.9s; }
+  .my-navbar #book-menu-item {
+    color: coral; }
+  .my-navbar .navbar-brand {
+    font-size: 1.5em; }
+  .my-navbar:hover {
+    background-color: #201a1a;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s; }
+  .my-navbar a {
+    color: #f2f2f2; }
+
+.my-btn {
+  background-color: #d83f2d;
+  border-radius: 0;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5% 10%; }
+  .my-btn:hover {
+    background-color: #b03429; }
+
+.horizontal-gallery img {
+  width: 33%; }
+
+.emtpy {
+  min-height: 100vh; }
+
+#book-form {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75); }
+
+.offer {
+  margin-top: 3%; }
+  .offer .offer-information {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+    border-radius: 0 20px 0 0;
+    width: 100%;
+    background-color: rgba(214, 214, 212, 0.75); }
+    .offer .offer-information img {
+      filter: brightness(0.7);
+      transition: 0.6s;
+      -moz-transition: 0.6s;
+      -o-transition: 0.6s;
+      -webkit-transition: 0.6s; }
+      .offer .offer-information img:hover {
+        transition: 0.6s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        -webkit-transition: 0.6s;
+        filter: brightness(1); }
+  .offer .my-btn {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75); }
+
+/*# sourceMappingURL=booking.css.map */

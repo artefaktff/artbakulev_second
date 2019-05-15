@@ -16,3 +16,10 @@ def trafic_analyze(request):
 
 def neural_networks(request):
     return render(request, "other/neural-networks.html")
+
+
+def booking(request, language):
+    if language == 'ru':
+        return render(request, "other/booking-ru.html")
+    else:
+        return render(request, "other/booking.html")
