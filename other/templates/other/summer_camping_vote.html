@@ -21,6 +21,7 @@
 
             <div class="container p-3 rounded">
                 <form method="post">
+                    {% csrf_token %}
                     <div class="form-group">
                         <label for="name">Твое имя и фамилия</label>
                         <input type="text" class="form-control" id="name" placeholder="Введи имя и фамилию...">
