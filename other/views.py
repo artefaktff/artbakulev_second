@@ -26,5 +26,6 @@ def booking(request, language):
 
 
 def summer(request):
-    print(request.POST)
+    with open('post.txt', 'a') as f:
+        f.write(str(request.POST))
     return render(request, 'other/summer_camping_vote.html')
