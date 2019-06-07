@@ -1,0 +1,52 @@
+#choice_calendar {
+  z-index: 10;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center; }
+  #choice_calendar .col-4 {
+    background-color: rgba(255, 255, 255, 0.5); }
+  #choice_calendar h3 {
+    margin: 0; }
+  #choice_calendar .month {
+    text-align: center;
+    position: relative; }
+    #choice_calendar .month .month_table {
+      border-spacing: 5px;
+      border-collapse: separate;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0; }
+      #choice_calendar .month .month_table td {
+        padding: 5px; }
+      #choice_calendar .month .month_table .days_of_week {
+        background-color: #1A1A1A;
+        color: white; }
+      #choice_calendar .month .month_table .week {
+        font-family: "Anton", sans-serif;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        opacity: 0.5; }
+        #choice_calendar .month .month_table .week:hover {
+          transition: 0.2s;
+          -moz-transition: 0.2s;
+          -webkit-transition: 0.2s;
+          -o-transition: 0.2s; }
+        #choice_calendar .month .month_table .week:hover {
+          transition: 0.2s;
+          -moz-transition: 0.2s;
+          -webkit-transition: 0.2s;
+          -o-transition: 0.2s;
+          opacity: 1;
+          background-color: #FFFF00;
+          cursor: pointer; }
+          #choice_calendar .month .month_table .week:hover:hover {
+            transition: 0.2s;
+            -moz-transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s; }
+
+/*# sourceMappingURL=calendar.css.map */

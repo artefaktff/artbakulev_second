@@ -5,8 +5,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Сходим?</title>
+    <link href="{% static 'other/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'other/css/calendar.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div id="choice_calendar">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="month" id="June">
+                    <h3>Июнь</h3>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="month" id="July">
+                    <h3>Июль</h3>
+                    <table class="month_table">
+                    </table>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="month" id="August">
+                    <h3>Август</h3>
+                    <table class="month_table">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript" src="{% static 'other/js/calendar.js' %}"></script>
 <script type="text/javascript">

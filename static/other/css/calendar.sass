@@ -1,0 +1,56 @@
+$black: #1A1A1A
+$yellow: #FFFF00
+
+@mixin transition($seconds)
+  transition: $seconds
+  -moz-transition: $seconds
+  -webkit-transition: $seconds
+  -o-transition: $seconds
+  &:hover
+    transition: $seconds
+    -moz-transition: $seconds
+    -webkit-transition: $seconds
+    -o-transition: $seconds
+
+
+#choice_calendar
+  .col-4
+    background-color: rgba(255, 255, 255, 0.5)
+  z-index: 10
+  display: flex
+  height: 100%
+  width: 100%
+  align-items: center
+
+  h3
+    margin: 0
+
+  .month
+    text-align: center
+    position: relative
+
+    .month_table
+      border-spacing: 5px
+      border-collapse: separate
+      position: absolute
+      margin: auto
+      left: 0
+      right: 0
+
+      td
+        padding: 5px
+
+      .days_of_week
+        background-color: $black
+        color: white
+
+      .week
+        font-family: 'Anton', sans-serif
+        +transition(0.2s)
+        opacity: 0.5
+
+        &:hover
+          +transition(0.2s)
+          opacity: 1
+          background-color: $yellow
+          cursor: pointer

@@ -1,17 +1,5 @@
-$(document).ready(function () {
-    $('#choice_calendar').hide();
-});
-
-function toggleCalendar(out_el, in_el) {
-    out_el.fadeOut(400);
-    setTimeout(function () {
-        in_el.fadeIn(400);
-    }, 400)
-}
-
 function choiceOfDate() {
-    let chat = $('#choice_chat'),
-        calendar = $('#choice_calendar'),
+    let calendar = $('#choice_calendar'),
         months = [],
         months_names = ['June', 'July', 'August'],
         months_days_number = [30, 31, 31],
@@ -19,7 +7,6 @@ function choiceOfDate() {
         months_days_back_offset = [0, 4, 1],
         table, table_code, countDays, countWeeks;
 
-    toggleCalendar(chat, calendar);
 
     for (let i = 0; i < months_names.length; i++) {
         months.push(document.getElementById(months_names[i]));
@@ -45,11 +32,9 @@ function choiceOfDate() {
             }
             if (day < months_days_offset[i]) {
                 table_code += '<td>X</td>'
-            }
-            else if (day > months_days_number[i] + months_days_offset[i] - 1) {
+            } else if (day > months_days_number[i] + months_days_offset[i] - 1) {
                 table_code += '<td>X</td>'
-            }
-            else {
+            } else {
                 table_code += '<td>' + (day - months_days_offset[i] + 1) + '</td>'
             }
             countDays += 1;
