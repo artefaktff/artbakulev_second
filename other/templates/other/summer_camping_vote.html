@@ -24,11 +24,11 @@
                     {% csrf_token %}
                     <div class="form-group">
                         <label for="name">Твое имя и фамилия</label>
-                        <input type="text" class="form-control" id="name" placeholder="Введи имя и фамилию...">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Введи имя и фамилию...">
                     </div>
                     <div class="form-group">
                         <label for="duration">Сколько дней хочешь быть на природе?</label>
-                        <input type="number" placeholder="6" class="form-control" id="duration">
+                        <input type="number" placeholder="6" name="duration" class="form-control" id="duration">
                     </div>
 {#                    <div id='when_row' class="row">#}
 {#                        <div class="col-4">#}
