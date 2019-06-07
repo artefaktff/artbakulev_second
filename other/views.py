@@ -23,3 +23,7 @@ def booking(request, language):
         return render(request, "other/booking-ru.html")
     else:
         return render(request, "other/booking.html")
+
+
+def summer(request):
+    return render(request, 'other/summer_camping_vote.html')
