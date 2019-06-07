@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Сходим?</title>
-    <!--{#    <link href="{% static 'other/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">#}-->
-    <!--{#    <link href="{% static 'other/css/calendar.css' %}" rel="stylesheet" type="text/css">#}-->
-    <link href="../../../static/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../../../static/other/css/calendar.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'other/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'other/css/calendar.css' %}" rel="stylesheet" type="text/css">
+{#    <link href="../../../static/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">#}
+{#    <link href="../../../static/other/css/calendar.css" rel="stylesheet" type="text/css">#}
 </head>
 <body>
 <div id="calendar" class="justify-content-center align-items-center">
@@ -61,10 +61,10 @@
 
 </div>
 
-<!--{#<script type="text/javascript" src="{% static 'other/js/jquery-3.3.1.min.js' %}"></script>#}-->
-<script type="text/javascript" src="../../../static/other/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="../../../static/other/js/calendar.js"></script>
-<!--{#<script type="text/javascript" src="{% static 'other/js/calendar.js' %}"></script>#}-->
+<script type="text/javascript" src="{% static 'other/js/jquery-3.3.1.min.js' %}"></script>
+{#<script type="text/javascript" src="../../../static/other/js/jquery-3.3.1.min.js"></script>#}
+{#<script type="text/javascript" src="../../../static/other/js/calendar.js"></script>#}
+<script type="text/javascript" src="{% static 'other/js/calendar.js' %}"></script>
 <script type="text/javascript">
     choiceOfDate();
 </script>
