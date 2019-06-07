@@ -28,7 +28,7 @@ function choiceOfDate() {
                     table_code += '</div>';
                     table_code += '<div class="week days_of_week"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>'
                 }
-                table_code += '</div><input class="week hvr-push clickable" type="text" disabled name="' + months_names[i] + '-week-' + countWeeks + '" id="' + months_names[i] + '-week-' + countWeeks + '">';
+                table_code += '</div><div class="week hvr-push clickable" id="' + months_names[i] + '-week-' + countWeeks + '">';
                 countDays = 0;
                 countWeeks += 1;
             }
