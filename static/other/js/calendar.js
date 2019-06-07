@@ -28,7 +28,7 @@ function choiceOfDate() {
                     table_code += '</div>';
                     table_code += '<div class="week days_of_week"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>'
                 }
-                table_code += '</div><div class="week hvr-push" id="' + months_names[i] + '-week-' + countWeeks + '">';
+                table_code += '</div><div class="week hvr-push  clickable" id="' + months_names[i] + '-week-' + countWeeks + '">';
                 countDays = 0;
                 countWeeks += 1;
             }
@@ -57,11 +57,11 @@ function onWeekClick() {
         weeks[i].addEventListener('click', function () {
             if (this.isClicked) {
                 this.isClicked = false;
-                this.className = 'week hvr_push';
-                this.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+                this.className = 'week hvr_push clickable';
+                this.style.backgroundColor = 'transparent';
             } else {
                 this.isClicked = true;
-                this.style.backgroundColor = 'orange';
+                this.style.backgroundColor = '#8bc2a1';
                 this.className = 'week';
 
 

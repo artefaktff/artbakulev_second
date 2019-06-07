@@ -1,6 +1,9 @@
 $black: #1A1A1A
-$yellow: #FFFF00
-$pink: #ffc1c8
+$dark-green: #438644
+$green: #8bc2a1
+$white: #ebe5e6
+$pink: #f0c0b5
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap')
 
 @mixin transition($seconds)
   transition: $seconds
@@ -13,14 +16,23 @@ $pink: #ffc1c8
     -webkit-transition: $seconds
     -o-transition: $seconds
 
+label
+  font-size: 1.4em
+  font-weight: 500
+
+.btn
+  font-size: 0.5em
 .solid
+  position: absolute
   z-index: 10
   width: 100%
   height: 100%
   background-color: $black
-  opacity: 0.5
+  opacity: 0.75
 
 #calendar
+  font-size: 3em
+  font-family: 'Amatic SC', cursive
   z-index: 1000
   display: flex
   height: 100vh
@@ -28,7 +40,17 @@ $pink: #ffc1c8
   background: url("https://img1.goodfon.ru/wallpaper/nbig/c/57/bereg-les-devushka-pohod.jpg") no-repeat center
   background-size: cover
 
+  .form-group
+    font-size: 16px
+  .title
+    color: $white
+    font-size: 0.7em
+    font-weight: 500
+
+  .month
+    color: $black
 #choice_menu
+
   height: 100%
   z-index: 100
   display: flex
@@ -42,29 +64,36 @@ $pink: #ffc1c8
 
     .container
       padding: 10px
-      background-color: rgba(255, 255, 255, 0.7)
+      background-color: rgba(255, 255, 255, 0.6)
 
       #when_row
         .col-4
           text-align: center
 
           .days_of_week
-            background-color: $pink
-            color: white
-            font-size: 20px
+            background-color: $dark-green
+            color: $white
+            font-size: 1em
+            &:hover
+              background-color: $dark-green
 
           .week
             +transition(0.5s)
             display: flex
             justify-content: space-around
             width: 100%
-
+            cursor: pointer
             div
-              font-size: 18px
+              font-size: 0.5em
               display: inline-block
               width: 24px
 
+
+          .week.clickable
             &:hover
-              background-color: $yellow
+              background-color: $pink
               cursor: pointer
-              color: grey
+              color: $green
+
+.month
+  color: $black
