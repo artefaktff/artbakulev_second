@@ -8,39 +8,42 @@
     <link href="{% static 'other/css/calendar.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="choice_menu">
-    <div class="when_choice_container first"><h3 class="when_text">выбери недели, когда тебе удобнее будет
-        поехать</h3></div>
-    <div class="when_choice_container"><h3 class="when_text">чем больше, тем лучше</h3></div>
-    <div class="when_choice_container last"><h3 class="when_text">просто ткни на понравившиеся тебе числа</h3>
-    </div>
-    <div id="choice_calendar">
-        <div class="container">
-            <div id='when_row' class="row">
-                <div class="col-4">
-                    <div class="month" id="June">
-                        <h3>Июнь</h3>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="month" id="July">
-                        <h3>Июль</h3>
-                        <div class="month_table">
+<div id="calendar">
+    <div class="solid"></div>
+    <div id="choice_menu">
+        <div class="when_choice_container first"><h3 class="when_text">выбери недели, когда тебе удобнее будет
+            поехать</h3></div>
+        <div class="when_choice_container"><h3 class="when_text">чем больше, тем лучше</h3></div>
+        <div class="when_choice_container last"><h3 class="when_text">просто ткни на понравившиеся тебе числа</h3>
+        </div>
+        <div id="choice_calendar">
+            <div class="container">
+                <div id='when_row' class="row">
+                    <div class="col-4">
+                        <div class="month" id="June">
+                            <h3>Июнь</h3>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="month" id="August">
-                        <h3>Август</h3>
-                        <div class="month_table">
+                    <div class="col-4">
+                        <div class="month" id="July">
+                            <h3>Июль</h3>
+                            <div class="month_table">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="month" id="August">
+                            <h3>Август</h3>
+                            <div class="month_table">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="when_choice_container">
-        <div class="when_button hvr-bob" onclick="onChoiceButtonClick()">ВЫБРАЛ</div>
+        <div class="when_choice_container">
+            <div class="when_button hvr-bob" onclick="onChoiceButtonClick()">ВЫБРАЛ</div>
+        </div>
     </div>
 </div>
 
