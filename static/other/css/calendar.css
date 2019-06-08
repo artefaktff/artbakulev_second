@@ -61,6 +61,7 @@ label {
   align-items: center;
   justify-content: center; }
   #choice_menu #choice_calendar {
+    position: absolute;
     width: 100%;
     display: flex; }
     #choice_menu #choice_calendar .container {
