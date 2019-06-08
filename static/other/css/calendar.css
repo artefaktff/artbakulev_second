@@ -15,6 +15,7 @@ label {
   opacity: 0.75; }
 
 #success {
+  position: relative;
   color: #ebe5e6;
   font-size: 3em;
   font-family: "Amatic SC", cursive;
@@ -34,6 +35,7 @@ label {
     bottom: 0; }
 
 #calendar {
+  position: relative;
   font-size: 3em;
   font-family: "Amatic SC", cursive;
   z-index: 1000;
