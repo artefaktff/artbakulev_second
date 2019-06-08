@@ -48,11 +48,11 @@ $('#vote').on('click', function (e) {
     }
     json.weeks = clicked_weeks_id;
     $.ajax({
-            url: 'summer/ajax/',
+            url: 'summer/ajax',
             type: 'POST',
             data: json,
             success: function (response) {
-                window.location.href = "summer/voted/";
+                window.location.href = "summer/voted";
             }
         }
     );
