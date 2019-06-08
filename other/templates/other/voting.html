@@ -6,8 +6,6 @@
     <title>Сходим?</title>
     <link href="{% static 'other/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'other/css/calendar.css' %}" rel="stylesheet" type="text/css">
-{#    <link href="../../../static/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">#}
-{#    <link href="../../../static/other/css/calendar.css" rel="stylesheet" type="text/css">#}
 </head>
 <body>
 <div id="calendar" class="justify-content-center align-items-center">
@@ -24,11 +22,12 @@
                     {% csrf_token %}
                     <div class="form-group">
                         <label for="name">Твое имя и фамилия</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Введи имя и фамилию...">
+                        <input type="text" class="form-control" name="name" id="name"
+                               placeholder="Введи имя и фамилию..." required>
                     </div>
                     <div class="form-group">
                         <label for="duration">Сколько дней хочешь быть на природе?</label>
-                        <input type="number" placeholder="6" name="duration" class="form-control" id="duration">
+                        <input type="number" placeholder="6" name="duration" class="form-control" id="duration" required>
                     </div>
                     <div id='when_row' class="row">
                         <div class="col-4">
@@ -51,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                    <input type="submit" class="btn btn-light" value="Отправить">
+                    <input type="button" id="vote" class="btn btn-light mt-4" value="Выбрал">
                 </form>
 
             </div>
@@ -62,9 +61,8 @@
 </div>
 
 <script type="text/javascript" src="{% static 'other/js/jquery-3.3.1.min.js' %}"></script>
-{#<script type="text/javascript" src="../../../static/other/js/jquery-3.3.1.min.js"></script>#}
-{#<script type="text/javascript" src="../../../static/other/js/calendar.js"></script>#}
 <script type="text/javascript" src="{% static 'other/js/calendar.js' %}"></script>
+<script type="text/javascript" src="{% static 'other/js/ajax_main.js' %}"></script>
 <script type="text/javascript">
     choiceOfDate();
 </script>

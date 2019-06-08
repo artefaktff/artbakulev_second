@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сходим?</title>
+    <link href="{% static 'other/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'other/css/calendar.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="success" class="d-flex justify-content-center align-items-center">
+<div class="solid"></div>
+    <div id="success-text" class="h-100 w-100 text-center">
+        <h2>Средняя продолжительность:</h2>
+        {% if duration == 1 %}
+            <h1>{{ duration }} день</h1>
+        {% elif duration < 5 %}
+            <h1>{{ duration }} дня</h1>
+        {% else %}
+            <h1>{{ duration }} дней</h1>
+        {% endif %}
+        <hr class="mt-4 mb-4">
+        <h2>Топ недель:</h2>
+        {% for week in weeks %}
+            <h1>{{ week }}</h1>
+        {% endfor %}
+        <hr class="mt-4 mb-4">
+        <h2>Всего проголосовало:</h2>
+        <h1>{{ total }}</h1>
+    </div>
+
+</div>
+
+</body>
+</html>

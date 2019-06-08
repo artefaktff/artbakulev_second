@@ -4,7 +4,7 @@ label {
   font-weight: 500; }
 
 .btn {
-  font-size: 0.5em; }
+  font-size: 1.5em; }
 
 .solid {
   position: absolute;
@@ -13,6 +13,25 @@ label {
   height: 100%;
   background-color: #1A1A1A;
   opacity: 0.75; }
+
+#success {
+  color: #ebe5e6;
+  font-size: 3em;
+  font-family: "Amatic SC", cursive;
+  min-height: 100vh;
+  background: url("https://poster.nicefon.ru/2016_05/19/1080x610/1303399ab123b4e1e0cb4.jpg") no-repeat center;
+  background-size: cover; }
+  #success #success-text {
+    z-index: 10000; }
+  #success hr {
+    background-color: #ebe5e6; }
+  #success .container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 #calendar {
   font-size: 3em;
@@ -68,7 +87,7 @@ label {
             -webkit-transition: 0.5s;
             -o-transition: 0.5s; }
           #choice_menu #choice_calendar .container #when_row .col-4 .week div {
-            font-size: 0.5em;
+            font-size: 1.4em;
             display: inline-block;
             width: 24px; }
         #choice_menu #choice_calendar .container #when_row .col-4 .week.clickable:hover {

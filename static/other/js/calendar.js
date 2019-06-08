@@ -62,7 +62,7 @@ function onWeekClick() {
             } else {
                 this.isClicked = true;
                 this.style.backgroundColor = '#8bc2a1';
-                this.className = 'week';
+                this.className = 'week clicked';
 
 
             }
