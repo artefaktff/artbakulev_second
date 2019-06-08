@@ -66,15 +66,15 @@ label {
     #choice_menu #choice_calendar .container {
       padding: 10px;
       background-color: rgba(255, 255, 255, 0.6); }
-      #choice_menu #choice_calendar .container #when_row .col-4 {
+      #choice_menu #choice_calendar .container #when_row .col-md-4, #choice_menu #choice_calendar .container #when_row .col-sm-12 {
         text-align: center; }
-        #choice_menu #choice_calendar .container #when_row .col-4 .days_of_week {
+        #choice_menu #choice_calendar .container #when_row .col-md-4 .days_of_week, #choice_menu #choice_calendar .container #when_row .col-sm-12 .days_of_week {
           background-color: #438644;
           color: #ebe5e6;
           font-size: 1em; }
-          #choice_menu #choice_calendar .container #when_row .col-4 .days_of_week:hover {
+          #choice_menu #choice_calendar .container #when_row .col-md-4 .days_of_week:hover, #choice_menu #choice_calendar .container #when_row .col-sm-12 .days_of_week:hover {
             background-color: #438644; }
-        #choice_menu #choice_calendar .container #when_row .col-4 .week {
+        #choice_menu #choice_calendar .container #when_row .col-md-4 .week, #choice_menu #choice_calendar .container #when_row .col-sm-12 .week {
           transition: 0.5s;
           -moz-transition: 0.5s;
           -webkit-transition: 0.5s;
@@ -83,16 +83,16 @@ label {
           justify-content: space-around;
           width: 100%;
           cursor: pointer; }
-          #choice_menu #choice_calendar .container #when_row .col-4 .week:hover {
+          #choice_menu #choice_calendar .container #when_row .col-md-4 .week:hover, #choice_menu #choice_calendar .container #when_row .col-sm-12 .week:hover {
             transition: 0.5s;
             -moz-transition: 0.5s;
             -webkit-transition: 0.5s;
             -o-transition: 0.5s; }
-          #choice_menu #choice_calendar .container #when_row .col-4 .week div {
+          #choice_menu #choice_calendar .container #when_row .col-md-4 .week div, #choice_menu #choice_calendar .container #when_row .col-sm-12 .week div {
             font-size: 1.4em;
             display: inline-block;
             width: 24px; }
-        #choice_menu #choice_calendar .container #when_row .col-4 .week.clickable:hover {
+        #choice_menu #choice_calendar .container #when_row .col-md-4 .week.clickable:hover, #choice_menu #choice_calendar .container #when_row .col-sm-12 .week.clickable:hover {
           background-color: #f0c0b5;
           cursor: pointer;
           color: #8bc2a1; }
