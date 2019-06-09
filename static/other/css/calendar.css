@@ -23,7 +23,13 @@ label {
   background: url("https://poster.nicefon.ru/2016_05/19/1080x610/1303399ab123b4e1e0cb4.jpg") no-repeat center;
   background-size: cover; }
   #success #success-text {
-    z-index: 10000; }
+    z-index: 10000;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   #success hr {
     background-color: #ebe5e6; }
 
