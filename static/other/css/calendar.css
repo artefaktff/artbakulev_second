@@ -20,7 +20,6 @@ label {
   font-size: 3em;
   font-family: "Amatic SC", cursive;
   min-height: 100vh;
-  display: flex;
   background: url("https://poster.nicefon.ru/2016_05/19/1080x610/1303399ab123b4e1e0cb4.jpg") no-repeat center;
   background-size: cover; }
   #success #success-text {
@@ -28,7 +27,7 @@ label {
   #success hr {
     background-color: #ebe5e6; }
   #success .container {
-    z-index: 100000;
+    z-index: 10000;
     position: absolute;
     margin: auto;
     top: 0;
@@ -63,7 +62,6 @@ label {
   align-items: center;
   justify-content: center; }
   #choice_menu #choice_calendar {
-    position: absolute;
     width: 100%;
     display: flex; }
     #choice_menu #choice_calendar .container {
