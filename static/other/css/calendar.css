@@ -26,14 +26,6 @@ label {
     z-index: 10000; }
   #success hr {
     background-color: #ebe5e6; }
-  #success .container {
-    z-index: 10000;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
 
 #calendar {
   position: relative;
