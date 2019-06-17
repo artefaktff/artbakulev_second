@@ -35,7 +35,9 @@ function enableScroll() {
 disableScroll();
 
 window.onload = function() {
+
     $('#preloader').fadeOut(500);
     enableScroll();
     $('#index').css('overflow', 'visible');
+    $('#centered_title').height($('#title').height());
 };

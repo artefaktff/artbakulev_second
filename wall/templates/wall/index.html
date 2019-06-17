@@ -9,44 +9,43 @@
     <link rel="stylesheet" href="{% static "wall/css/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static "wall/css/hover-min.css" %}">
     <link rel="stylesheet" href="{% static "wall/css/bootstrap.min.css" %}" type="text/css">
-    <link rel="stylesheet" href="{% static "wall/css/main.css" %}"  type="text/css">
-    <meta name="google-site-verification" content="dJxVt8CulrA_ky42005YlzxOid4ko5Pa4E04ixNhiyM" />
-    <meta name="yandex-verification" content="27b3a824612d6944" />
-    <meta name="mailru-domain" content="bhM7vUwAo345sQwF" />
+    <link rel="stylesheet" href="{% static "wall/css/main.css" %}" type="text/css">
+    <meta name="google-site-verification" content="dJxVt8CulrA_ky42005YlzxOid4ko5Pa4E04ixNhiyM"/>
+    <meta name="yandex-verification" content="27b3a824612d6944"/>
+    <meta name="mailru-domain" content="bhM7vUwAo345sQwF"/>
 </head>
 <body>
 
 <div id="preloader">
-        <img src="{% static "wall/images/loader.gif" %}">
-    </div>
+    <img src="{% static "wall/images/loader.gif" %}">
+</div>
 <div class="main">
     <div id="info"><i class="fa fa-bars"></i></div>
     <div id="information">
 
         <div class="aboutMe container">
             <img src="{% static "wall/images/avatar.png" %}">
-            <p><span style="font-weight: 800">Начинающий разработчик и дизайнер.</span> <br> Люблю Python, адаптивные сайты, графику, нейронные сети и походы.<br>
+            <p><span style="font-weight: 800">Начинающий разработчик и дизайнер.</span> <br> Люблю Python, адаптивные
+                сайты, графику, нейронные сети и походы.<br>
                 Живу в Москве. Учусь в Бауманке.<br>
-                Умею: <span class="tools">Python 3.x, C++, JS, HTML5+CSS3</span><br>
-                Фреймворки: <span class="tools">Django, Bootstrap</span><br>
-                Мои работы можно посмотреть на github и на этом сайте.<br><br>
-                <div class="bordered">
-
-            <a href="https://github.com/Artefakt-ff/"><i class="fa fa-github"></i> GitHub</a><br>
-            <a href="https://t.me/provincial_tracer/"><i class="fa fa-telegram"></i> Telegram.</a><br>
-            <a href="https://vk.com/artefakt1998/"><i class="fa fa-comment-o"></i> вКонтакте</a><br>
-            <a href="mailto:bakulev.artyom@yandex.ru"><i class="fa fa-envelope-open"></i> adbakulev@gmail.com</a>
-        </div>
+                Умею: <span class="tools">Python 3.x, C/C++, JS/JQuery, HTML5+CSS3</span><br>
+            <div class="bordered p-3">
+                <a href="https://github.com/Artefakt-ff/"><i class="fa fa-github"></i> GitHub</a><br>
+                <a href="https://t.me/provincial_tracer/"><i class="fa fa-telegram"></i> Telegram.</a><br>
+                <a href="https://vk.com/bakulev_artyom/"><i class="fa fa-comment-o"></i> ВКонтакте</a><br>
+                <a href="mailto:i@artbakulev.com"><i class="fa fa-envelope-open"></i> i@artbakulev.com</a>
+            </div>
         </div>
 
 
     </div>
     <div id="introduction">
-        <div class="centered">
-            <h1>Bakulev Artyom</h1>
-            <div class="red_line" id="red_line_1"></div>
-            <div class="red_line" id="red_line_2"></div>
-            <a href="#portfolio"><img src="{% static "wall/images/rocket.png" %}" id="rocket" class="fa fa-space-shuttle hvr-buzz" aria-hidden="true"></img>
+        <div id="centered_title" class="centered">
+            <h1 id="title">Bakulev Artyom</h1>
+            <div class="red_line phone-none" id="red_line_1"></div>
+            <div class="red_line phone-none" id="red_line_2"></div>
+            <a href="#portfolio"><img alt="rocket" src="{% static "wall/images/rocket.png" %}" id="rocket"
+                                      class="phone-none fa fa-space-shuttle hvr-buzz" aria-hidden="true"/>
             </a>
 
 
@@ -56,7 +55,7 @@
 
     </div>
 
-    <div id="portfolio">
+    <div id="portfolio" class="pt-3">
 
         <div class="container">
 
@@ -66,8 +65,10 @@
                     {% for post in posts %}
                         <a href="works/{{ post.short_url }}/">
                             <div class="work">
+                                <hr>
                                 <h2>{{ post.title }}</h2>
-                                <p class="description">{{ post.description }} </p>
+                                <hr>
+{#                                <p class="description">{{ post.description }} </p>#}
                                 <img class="lazyload" data-src="{% static post.main_image_link %}">
                             </div>
                         </a>
@@ -80,17 +81,17 @@
         </div>
     </div>
 
-<script src="{% static "wall/js/jquery-3.2.1.min.js" %}" type="text/javascript"></script>
-<script src="{% static "wall/js/scroll.js" %}" type="text/javascript"></script>
-<script src="{% static "wall/js/information.js" %}" type="text/javascript"></script>
-<script src="{% static "wall/js/reduce_description.js" %}" type="text/javascript"></script>
-<script src="{% static "wall/js/loading.js" %}" type="text/javascript"></script>
-<script src="https://cdn.rawgit.com/tuupola/jquery_lazyload/07d121f8dfa7c83c8a2bb0767f5c77eaf60be54e/lazyload.js"></script>
+    <script src="{% static "wall/js/jquery-3.2.1.min.js" %}" type="text/javascript"></script>
+    <script src="{% static "wall/js/scroll.js" %}" type="text/javascript"></script>
+    <script src="{% static "wall/js/information.js" %}" type="text/javascript"></script>
+    <script src="{% static "wall/js/reduce_description.js" %}" type="text/javascript"></script>
+    <script src="{% static "wall/js/loading.js" %}" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/tuupola/jquery_lazyload/07d121f8dfa7c83c8a2bb0767f5c77eaf60be54e/lazyload.js"></script>
     <script>
-window.addEventListener("load", function(event) {
-   lazyload();
-});
-</script>
+        window.addEventListener("load", function (event) {
+            lazyload();
+        });
+    </script>
 
 </body>
 </html>
