@@ -25,7 +25,7 @@ function toggleInfo() { // # TODO: понять как это должно ра�
 
         information.css('display', 'block');
         information.animate({
-            marginLeft: '0px',
+            marginLeft: '-10%',
         }, 100);
         // information.css('marginLeft', '0px');
         // information.css('marginLeft', (-margin + 'px'));
