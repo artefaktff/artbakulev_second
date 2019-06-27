@@ -280,6 +280,9 @@ header:hover {
 
 @media (max-width: 575.98px) {
   .phone-none {
-    display: none; } }
+    display: none; }
+
+  #information {
+    padding-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
