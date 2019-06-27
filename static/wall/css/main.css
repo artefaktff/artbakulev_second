@@ -38,7 +38,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px; }
 
-@viewport;
+@viewport
 #info {
   z-index: 10000;
   text-align: center;
@@ -283,6 +283,7 @@ header:hover {
     display: none; }
 
   #information {
-    padding-top: 0; } }
+    padding-top: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
